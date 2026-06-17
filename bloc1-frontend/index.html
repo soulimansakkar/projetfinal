@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Wakdo - Commander</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">WAKDO</div>
+    <div class="panier-btn" onclick="togglePanier()">
+        Mon panier (<span id="nb-panier">0</span>)
+    </div>
+</header>
+
+<div class="categories">
+    <button class="cat-btn actif" data-cat="burgers" onclick="afficherProduits('burgers')">Burgers</button>
+    <button class="cat-btn" data-cat="menus" onclick="afficherProduits('menus')">Menus</button>
+    <button class="cat-btn" data-cat="frites" onclick="afficherProduits('frites')">Frites</button>
+    <button class="cat-btn" data-cat="boissons" onclick="afficherProduits('boissons')">Boissons</button>
+    <button class="cat-btn" data-cat="desserts" onclick="afficherProduits('desserts')">Desserts</button>
+</div>
+
+<div class="contenu">
+    <div id="produits-liste" class="produits-grille"></div>
+
+    <div id="panier-panel" class="panier" style="display:none">
+        <h3>Ma commande</h3>
+        <div id="panier-contenu"></div>
+        <p id="panier-total">Total : 0.00 €</p>
+        <div class="form-num">
+            <label>Numéro client :</label>
+            <input type="number" id="numero-client" min="1" max="999" placeholder="ex: 42">
+        </div>
+        <button onclick="validerCommande()" class="btn-valider">Valider</button>
+        <button onclick="viderPanier()" class="btn-vider">Vider</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

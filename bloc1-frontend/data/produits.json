@@ -1,0 +1,17 @@
+[
+  {"id": 1, "nom": "Menu Classique", "prix": 8.90, "categorie": "menus", "image": "menu-classique.jpg"},
+  {"id": 2, "nom": "Menu Double", "prix": 10.50, "categorie": "menus", "image": "menu-double.jpg"},
+  {"id": 3, "nom": "Menu Bacon", "prix": 9.90, "categorie": "menus", "image": "menu-bacon.jpg"},
+  {"id": 4, "nom": "Burger Classique", "prix": 4.50, "categorie": "burgers", "image": "burger-classique.jpg"},
+  {"id": 5, "nom": "Double Burger", "prix": 5.90, "categorie": "burgers", "image": "double-burger.jpg"},
+  {"id": 6, "nom": "Burger Bacon", "prix": 5.50, "categorie": "burgers", "image": "burger-bacon.jpg"},
+  {"id": 7, "nom": "Burger Végétarien", "prix": 5.20, "categorie": "burgers", "image": "burger-vege.jpg"},
+  {"id": 8, "nom": "Frites Normales", "prix": 2.50, "categorie": "frites", "image": "frites.jpg"},
+  {"id": 9, "nom": "Grandes Frites", "prix": 3.00, "categorie": "frites", "image": "frites-grandes.jpg"},
+  {"id": 10, "nom": "Coca-Cola", "prix": 2.20, "categorie": "boissons", "image": "coca.jpg"},
+  {"id": 11, "nom": "Eau minérale", "prix": 1.50, "categorie": "boissons", "image": "eau.jpg"},
+  {"id": 12, "nom": "Jus d'orange", "prix": 2.50, "categorie": "boissons", "image": "jus.jpg"},
+  {"id": 13, "nom": "Milkshake Chocolat", "prix": 3.50, "categorie": "boissons", "image": "milkshake.jpg"},
+  {"id": 14, "nom": "McFlurry", "prix": 3.20, "categorie": "desserts", "image": "mcflurry.jpg"},
+  {"id": 15, "nom": "Tarte aux pommes", "prix": 1.80, "categorie": "desserts", "image": "tarte.jpg"}
+]
