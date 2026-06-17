@@ -17,4 +17,5 @@ Petit projet de commande en ligne avec deux parties :
 
 - le frontend charge les produits depuis `data/produits.json`
 - l'API de commande est dans `bloc2-backend/api.php`
+- pour tester, utiliser un serveur local PHP et ouvrir le frontend depuis un navigateur
 - le projet est volontairement simple, style débutant
