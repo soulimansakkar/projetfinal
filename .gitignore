@@ -1,0 +1,12 @@
+# Ignore local and temporary files
+.DS_Store
+Thumbs.db
+*.log
+*.bak
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore node_modules if any
+node_modules/
