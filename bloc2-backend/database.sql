@@ -33,6 +33,6 @@ CREATE TABLE commandes (
 -- pas eu le temps de faire la table lignes_commande
 
 INSERT INTO utilisateurs (nom, prenom, email, mot_de_passe, role) VALUES
-('Admin', 'Wakdo', 'admin@wakdo.fr', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin'),
-('Martin', 'Sophie', 'prep@wakdo.fr', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'preparation'),
-('Bernard', 'Karim', 'accueil@wakdo.fr', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'accueil');
+('Admin', 'Wakdo', 'admin@wakdo.fr', '$2y$10$vgmhsKkx/gZc8OZc0E6Liujutb9kk47iqUdzMwlpjkDaBkuDTgZte', 'admin'),
+('Martin', 'Sophie', 'prep@wakdo.fr', '$2y$10$hI4llnSd.8nmpLw.EYncveHkjo61hRfehdlRYtaRmOp9Q7KRlbSpW', 'preparation'),
+('Bernard', 'Karim', 'accueil@wakdo.fr', '$2y$10$keG365rxGCQIzYjd2R9/eexbbNj/Hooch18K0Rbgvo1iajWWfgA/a', 'accueil');
