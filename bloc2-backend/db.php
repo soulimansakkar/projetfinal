@@ -1,6 +1,5 @@
 <?php
 
-// connexion a la base de données avec PDO
 function getDB() {
     try {
         $pdo = new PDO(

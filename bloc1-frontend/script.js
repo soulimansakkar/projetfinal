@@ -1,4 +1,3 @@
-// script.js - code simple pour un petit projet étudiant
 var produits = [];
 var panier = [];
 
