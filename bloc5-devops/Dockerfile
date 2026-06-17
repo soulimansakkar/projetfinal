@@ -2,6 +2,7 @@ FROM php:8.1-apache
 
 RUN docker-php-ext-install pdo pdo_mysql
 
-COPY ./bloc2-backend /var/www/html
+# copier les fichiers de l'appli
+COPY . /var/www/html
 
-RUN chown -R www-data:www-data /var/www/html
+EXPOSE 80

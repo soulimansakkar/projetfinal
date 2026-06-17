@@ -20,7 +20,7 @@ class Produit {
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    // j'ai pas eu le temps de brancher la création/modification depuis l'interface
+    // creation et modification pas reliees au formulaire
     public function save($data) {
         if (!empty($data['id'])) {
             $stmt = $this->db->prepare('UPDATE produits SET nom=?, prix=? WHERE id=?');

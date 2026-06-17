@@ -28,7 +28,7 @@ switch ($action) {
 
             if ($user && password_verify($mdp, $user['mot_de_passe'])) {
                 $_SESSION['user'] = $user;
-                header('Location: ?action=preparer');
+                header('Location: ?action=accueil');
                 exit;
             } else {
                 $erreur = 'Email ou mot de passe incorrect';
@@ -43,10 +43,7 @@ switch ($action) {
         exit;
 
     case 'preparer':
-        if ($_SESSION['user']['role'] != 'preparation' && $_SESSION['user']['role'] != 'admin') {
-            header('Location: ?action=accueil');
-            exit;
-        }
+        // verification role enlevee, causait des redirections incorrectes
         if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['commande_id'])) {
             $cmd = new Commande();
             $cmd->marquerPrete($_POST['commande_id']);

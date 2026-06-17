@@ -5,7 +5,6 @@ class Commande {
     private $db;
 
     public function __construct() {
-        // connexion a la base de donnees
         $this->db = getDB();
     }
 
@@ -36,10 +35,10 @@ class Commande {
     // creer une commande depuis le front
     public function creer($data) {
         $stmt = $this->db->prepare(
-            'INSERT INTO commandes (numero_client, total, statut) VALUES (?, ?, "en_attente")'
+            'INSERT INTO commandes (num_client, montant, statut) VALUES (?, ?, "en_attente")'
         );
-        $stmt->execute([$data['numero'], $data['total']]);
+        $stmt->execute([$data['numero_commande'], $data['montant_total']]);
         return $this->db->lastInsertId();
-        // les lignes de commande ne sont pas encore gerees ici
+        // les lignes de commande pas implementees
     }
 }

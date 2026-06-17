@@ -11,6 +11,8 @@ services:
       MYSQL_PASSWORD: ${DB_PASS}
     volumes:
       - data_db:/var/lib/mysql
+    networks:
+      - wakdo_net
 
   app:
     build: .
@@ -23,6 +25,8 @@ services:
       DB_PASS: ${DB_PASS}
     depends_on:
       - db
+    networks:
+      - wakdo_net
 
 volumes:
   data_db:
